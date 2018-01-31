@@ -39,17 +39,18 @@ $ npm install
 
 [Javascript Dveloper](https://www.youtube.com/watch?v=FChEDsz8u28)
 
-[Stack Oveerflow](https://stackoverflow.com/questions/47194412/node-js-app-integration-with-power-bi-rest-api)
+[Stack Overflow](https://stackoverflow.com/questions/47194412/node-js-app-integration-with-power-bi-rest-api)
 
-Start Only API 
+
+Start API 
 ```bash
 $ npm run startapi
 ```
 
 - Make sure to test API first : 
      - [x] http://localhost:3000/api/aurth/accesstoken
-     - [x] http://localhost:3000/api/aurth/reportembaddedtoken/[Report Id](https://www.youtube.com/watch?v=GPHHdDRSlis)
-     - [x] http://localhost:3000/api/aurth/dashboardembaddedtoken/[Dashboard Id](https://www.youtube.com/watch?v=GPHHdDRSlis)
+     - [x] http://localhost:3000/api/aurth/reportembaddedtoken/ReportId [How to get Report Id?](https://www.youtube.com/watch?v=GPHHdDRSlis)
+     - [x] http://localhost:3000/api/aurth/dashboardembaddedtoken/DashboardId [How to get Dashboard Id?](https://www.youtube.com/watch?v=GPHHdDRSlis)
      - [x] http://localhost:3000/api/collection/reports
      - [x] http://localhost:3000/api/collection/dashboards
 
