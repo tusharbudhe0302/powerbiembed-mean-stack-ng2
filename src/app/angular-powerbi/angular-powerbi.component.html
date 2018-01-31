@@ -1,0 +1,73 @@
+<div fxLayout="row" fxLayoutWrap="wrap" *ngIf="showTabs">
+    <div fxFlex.gt-xs="100" fxFlex="100">
+        <md-card fxFlex>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <md-card-header class="mt-0">
+                    <md-card-title>Workspaces:</md-card-title>
+                </md-card-header>
+                <span fxFlex></span>
+            </div>
+            <hr>
+            <md-card-content style="min-height: 100px">
+                <md-nav-list dense>
+                    <md-list-item *ngFor="let workspace of workspaces">
+                        <md-icon md-list-icon class="project">library_books</md-icon>
+                        <h4 md-line>{{workspace.name}}</h4>
+                    </md-list-item>
+                </md-nav-list>
+            </md-card-content>
+        </md-card>
+    </div>
+</div>
+
+<div fxLayout="row" fxLayoutWrap="wrap" *ngIf="showTabs">
+    <div fxFlex.gt-xs="50" fxFlex="100">
+        <md-card fxFlex>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <md-card-header class="mt-0">
+                    <md-card-title>Dashboards:</md-card-title>
+                </md-card-header>
+                <span fxFlex></span>
+            </div>
+            <hr>
+            <md-card-content style="min-height: 100px">
+                <md-nav-list dense>
+                    <md-list-item *ngFor="let dashbaord of dashboards" (click)="showDahsbaord(dashbaord)">
+                        <md-icon md-list-icon class="project">library_books</md-icon>
+                        <h4 md-line>{{dashbaord.displayName}}</h4>
+                    </md-list-item>
+                </md-nav-list>
+            </md-card-content>
+        </md-card>
+    </div>
+    <div fxFlex.gt-xs="50" fxFlex="100">
+        <md-card fxFlex>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <md-card-header class="mt-0">
+                    <md-card-title>Reports:</md-card-title>
+                </md-card-header>
+                <span fxFlex></span>
+            </div>
+            <hr>
+            <md-card-content style="min-height: 100px">
+                <md-nav-list dense>
+                    <md-list-item *ngFor="let report of reports" (click)="showReport(report)">
+                        <md-icon md-list-icon class="project">library_books</md-icon>
+                        <h4 md-line>{{report.name}}</h4>
+                    </md-list-item>
+                </md-nav-list>
+            </md-card-content>
+        </md-card>
+    </div>
+</div>
+
+
+<div fxLayout="row" fxLayoutWrap="wrap" *ngIf="!showTabs">
+    <div fxFlex.gt-xs="100" fxFlex="100">
+        <md-card fxFlex>
+            <md-card-content>
+                <div id="reportContainer" powerbi-settings-filter-pane-enabled="false" powerbi-settings-nav-content-pane-enabled="false"></div>
+            </md-card-content>
+        </md-card>
+    </div>
+</div>

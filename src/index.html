@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Power BI Embed</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <script src="assets/bower_components/handsontable-pro/dist/handsontable.full.min.js"></script>
+</head>
+
+<body>
+  <app-root>
+    <style type="text/css">
+      #pre-bootstrap {
+        background-color: #2f4050;
+        bottom: 0px;
+        left: 0px;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        z-index: 999999;
+      }
+
+      #pre-bootstrap div.messaging {
+        color: #FFFFFF;
+        font-family: monospace;
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        text-align: center;
+        top: 25%;
+      }
+
+      #pre-bootstrap h1 {
+        font-size: 26px;
+        line-height: 35px;
+        margin: 0px 0px 20px 0px;
+      }
+
+      .spinner {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+
+        margin: 50px auto;
+        -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+        animation: sk-rotateplane 1.2s infinite ease-in-out;
+      }
+
+      @-webkit-keyframes sk-rotateplane {
+        0% {
+          -webkit-transform: perspective(120px)
+        }
+        50% {
+          -webkit-transform: perspective(120px) rotateY(180deg)
+        }
+        100% {
+          -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+        }
+      }
+
+      @keyframes sk-rotateplane {
+        0% {
+          transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+        }
+        50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+        }
+        100% {
+          transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+          -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+      }
+    </style>
+
+    <div id="pre-bootstrap">
+      <div class="messaging">
+        <div class="spinner"></div>
+        <h1>Loading PowerBI Dashboard...</h1>
+      </div>
+    </div>
+  </app-root>
+</body>
+
+</html>

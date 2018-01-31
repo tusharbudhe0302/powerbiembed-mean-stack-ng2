@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons'; 
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic';
+
+.project {
+    color: white;
+    background-color: #00bcd4;
+}
+
+.ts-new {
+    color: white;
+    background-color: #00bcd4;
+}
+
+.ts-submitted {
+    color: white;
+    background-color: #8bc34a;
+}
+
+.nowrap {
+    white-space: nowrap
+}
+
+.handsontable .htDimmed {
+    color: #000 !important;
+    background: #efefef;
+}
+
+.handsontable .summary {
+    color: #000 !important;
+    background: #efefef;
+}
+
+.handsontable .project {
+    color: rgba(0, 0, 0, 0.87) !important;
+    background: #ffffff;
+}
+
+.handsontable th:first-child {
+    text-align: left;
+}
+
+.handsontable th:not(:nth-child(1)) {
+    text-align: right;
+}
+
+.handsontable th:nth-child(2) {
+    text-align: left;
+}
+
+.handsontable tr > td {
+    xfont-size: 12px !important;
+}
+
+.handsontableInput {
+    xfont-size: 12px !important;
+}
+
+.handsontable th {
+    xfont-size: 12px !important;
+    color: #fff !important;
+    background: #00BCD4 !important;
+}
+
+.ui-datatable thead th {
+    text-align: left !important;
+    xfont-size: 12px !important;
+    color: #fff !important;
+    background: #00BCD4 !important;
+}
+
+.ui-datatable tbody td {
+    xfont-size: 12px !important;
+}
+
+.mat-dialog-actions .mat-button, 
+.mat-dialog-actions .mat-fab, 
+.mat-dialog-actions .mat-icon-button, 
+.mat-dialog-actions .mat-mini-fab, 
+.mat-dialog-actions .mat-raised-button {
+    margin-right: 8px;
+}
+
+.mat-card-actions .mat-button:first-child, 
+.mat-card-actions .mat-raised-button:first-child {
+    margin-left: 8px;
+    margin-right: 0px;
+}
+
+.ui-widget-header .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-state-highlight {
+    background: #c9dde1 !important;
+    color: #222222 !important;
+}
+
+body .mat-card .mat-card-title {
+    font-weight: 600 !important;
+}
+
+.ui-paginator {
+    text-align: right !important;
+}
+
+.ui-datatable a, 
+.ui-datatable a:hover, 
+.ui-datatable a:focus 
+{
+    color: #00a8c8 !important;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+}
+
+.ui-chkbox-box.ui-state-active, .ui-radiobutton-box.ui-state-active {
+    border: 1px solid #c9dde1 !important;
+    background: #c9dde1 !important;
+    color: #FFFFFF;
+}
+
+.project-form {
+  width: 500px;
+}
+
+.project-full-width {
+  width: 100%;
+}
+
+iframe {
+    border: none;
+}
